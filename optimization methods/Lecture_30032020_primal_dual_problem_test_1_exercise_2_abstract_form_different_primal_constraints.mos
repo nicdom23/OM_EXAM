@@ -1,0 +1,93 @@
+model ModelName
+  options noimplicit
+  uses "mmxprs"
+  ! uses "mminsight" ! uncomment this line for an Xpress Insight model
+
+
+
+  !EXERCISE 2 modified
+  declarations
+    n_1 = 1..3 !n of decision variables of primal problem/n of constraints of dual problem
+    n_2 = 1..3 !n of constraints of primal problem/n of decision variables of dual problem
+
+    !write data from the equation(notice that this problem cannot be anymore defined as a production problem, the dual cannot be defined as a min gain problem,I use generic names)
+    c:array(n_1) of integer
+    b:array(n_2) of integer
+    A:array(n_1,n_2) of integer
+
+    !decision variables
+    x: array(n_1) of mpvar !primal problem decision variables
+    pi: array(n_2) of mpvar !dual problem decision variables
+
+     primalConst: array(n_1) of linctr
+     dualConst: array(n_2) of linctr
+
+
+    z:linctr !primal problem objective function
+    w:linctr !dual problem objective function
+
+
+  end-declarations
+
+  !let's define the declarations
+
+  c::[1,1,1]
+  b::[4,10,5]
+  A::[3,-2,8,
+       7,7,9,
+       1,0,10]
+
+  !primal problem
+
+
+  ! z= c^t * x
+  z:=sum( j in n_1) c(j)*x(j) !to maximize
+
+  !constraints:= Ax inequality with b
+  forall(i in n_2) primalConst(i) := sum(j in n_1) A(i,j)*x(i) <= b(i) !here the constraints all have the same inequality
+
+
+  !free constraint REMOVED
+  !forall(i in n_2) x(i) is_free
+
+  writeln("Begin running model")
+
+
+   !solve primal problem
+  maximize(z)
+
+  !here we see the solution
+   writeln("Optimal value", getobjval) !6.1764
+
+   forall(i in n_1) writeln("x(",i,")=",getsol(x(i)))
+
+  writeln("End running model")
+
+
+  forall(i in n_2) sethidden(primalConst(i),TRUE) !hides the constraints of the primal problem
+
+
+  !dual problem
+
+  w:=sum( j in n_2) b(j)*pi(j) !to minimize
+
+  forall(i in n_1) dualConst(i) := sum(j in n_2) A(j,i)*pi(j) = c(i) !here the constraints all have the same inequality
+
+
+  !forall(i in n_2) pi(i) >=0  default
+
+
+  writeln("Begin running model")
+
+
+   !solve dual problem
+  minimize(w)
+
+  !here we see the solution
+   writeln("Optimal value", getobjval) !1333.333
+
+   forall(i in n_2) writeln("pi(",i,")=",getsol(pi(i)))
+
+  writeln("End running model")
+
+end-model

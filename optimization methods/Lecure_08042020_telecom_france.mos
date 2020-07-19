@@ -1,0 +1,66 @@
+model ModelName
+  options noimplicit !this is why we need to define everything
+  uses "mmxprs"
+  ! uses "mminsight" ! uncomment this line for an Xpress Insight model
+
+  declarations
+    ARCS: set of string !set of arcs
+    CALLS: set of string ! set of demand for each ordered pair
+    PATHS: range
+    
+
+    CAP: array(ARCS) of integer !capacity for each arc
+    DEM: array(CALLS) of integer !demand og each ordered pair
+    CINDEX: array(PATHS) of string
+    
+    
+    numarcs : integer
+    
+    x:array(PATHS) of mpvar !our decision variable! how much flow for each arc
+    Totflow:linctr !objective function
+    
+    Objective:linctr
+  end-declarations
+  
+  initialisations from "g3routing.dat"
+    CAP DEM CINDEX !I used the same names that are defined in the .dat file
+      !so the program understands the value of arcs!
+  end-initialisations
+  
+  numarcs := getsize(ARCS) !return 6 , we need to define numarcs as an integer
+  
+  declarations
+    ROUTE: array(PATHS,1..numarcs) of string !list of arcs that compose each path 
+    !numarcs is the maximum size of an array containing the city-to-city routes, which is selecting the while graph
+  end-declarations
+  
+  
+  writeln("Begin running model")
+ 
+    forall(p in PATHS) x(p) is_integer
+    
+    Totflow := sum(p in PATHS) x(p)
+    
+    forall(a in ARCS) do !capacity constraints
+      sum(p in PATHS, b in 1..numarcs | ROUTE(p,b)= a) x(p) <= CAP(a) !!all routes that pass in the same arc do not exceed the capacity of the arc
+    
+    end-do
+    
+    forall(c in CALLS) do !demand limits
+      sum(p in PATHS | CINDEX(p) = c) x(p) <= DEM(c) 
+    end-do
+    
+                             !destination is the sink
+    
+    maximize(Totflow)
+    
+    writeln("MaxFlow =" , getobjval)
+    
+    forall( p in PATHS) writeln("flow in",p," = ",getsol(x(p)))
+    
+  
+  
+  
+  
+  writeln("End running model")
+end-model

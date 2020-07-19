@@ -1,0 +1,110 @@
+model ModelName
+  options noimplicit
+  uses "mmxprs"
+
+  declarations
+    numbers = 1..9
+    subcells1 = 1..3
+    subcells2 = 4..6
+    subcells3 = 7..9
+    cell_filling: array(numbers,numbers,numbers)  of mpvar
+    Filling:linctr
+  end-declarations
+
+  forall(i in numbers,j in numbers,k in numbers) cell_filling(i,j,k) is_binary
+
+  !fixing initial conditions
+  cell_filling(1,1,8) =1
+  cell_filling(1,6,5) =1
+
+  cell_filling(2,1,3) =1
+  cell_filling(2,3,7) =1
+  cell_filling(2,4,8) =1
+
+  cell_filling(3,1,4) =1
+  cell_filling(3,5,7) =1
+  cell_filling(3,9,1) =1
+
+  cell_filling(4,4,3) =1
+  cell_filling(4,5,5) =1
+  cell_filling(4,8,6) =1
+
+  cell_filling(5,2,4) =1
+  cell_filling(5,3,3) =1
+  cell_filling(5,6,8) =1
+  cell_filling(5,8,1) =1
+
+  cell_filling(6,1,2) =1
+  cell_filling(6,4,7) =1
+  cell_filling(6,6,4) =1
+  cell_filling(6,9,8) =1
+
+  cell_filling(7,4,5) =1
+  cell_filling(7,7,4) =1
+  cell_filling(7,9,7) =1
+
+  cell_filling(8,1,1) =1
+  cell_filling(8,8,3) =1
+
+  cell_filling(9,4,6) =1
+
+
+  forall(i in numbers,j in numbers) (sum(k in numbers) cell_filling(i,j,k))=1 !all cells must be filled only with one number
+  forall(i in numbers,k in numbers) (sum(j in numbers) cell_filling(i,j,k))=1 !all numbers are unique in columns
+  forall(k in numbers,j in numbers) (sum(i in numbers) cell_filling(i,j,k))=1 !all numbers are unique in rows
+
+    !all 3x3 squares contain no repetition
+    forall(k in numbers)do
+    write("control")
+    (sum(i in subcells1, j in subcells1) cell_filling(i,j,k))=1
+
+    (sum(i in subcells1, j in subcells2) cell_filling(i,j,k))=1
+
+     (sum(i in subcells1, j in subcells3) cell_filling(i,j,k))=1
+
+    (sum(i in subcells2, j in subcells1) cell_filling(i,j,k))=1
+     (sum(i in subcells2, j in subcells2) cell_filling(i,j,k))=1
+     (sum(i in subcells2, j in subcells3) cell_filling(i,j,k))=1
+
+     (sum(i in subcells3, j in subcells1) cell_filling(i,j,k))=1
+    (sum(i in subcells3, j in subcells2) cell_filling(i,j,k))=1
+    (sum(i in subcells3, j in subcells3) cell_filling(i,j,k))=1
+
+  end-do
+  
+  Filling:= sum(i in numbers,j in numbers,k in numbers) cell_filling(i,j,k)
+  minimize (Filling)
+  exportprob(EP_MAX,"SUDOKU",Filling)
+  writeln(numbers)
+  
+   forall(i in numbers) do
+      forall(j in numbers)do
+          forall(k in numbers)do
+               write(getsol(cell_filling(i,j,k)))
+            end-do
+            write("||")
+      end-do
+      writeln("\n")
+  end-do
+
+  forall(i in numbers) do
+      forall(j in numbers)do
+          forall(k in numbers)do
+              
+              if getsol(cell_filling(i,j,k)) =1
+              then write("|")
+                  write(k)
+              end-if
+            end-do
+            if (sum(k in numbers)getsol(cell_filling(i,j,k)) =0)
+            then
+            write("0")
+            end-if
+            write("-")
+      end-do
+      writeln("\n")
+  end-do
+  writeln("Begin running model")
+  !...
+  writeln("End running model")
+end-model

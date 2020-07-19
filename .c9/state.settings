@@ -1,0 +1,390 @@
+{
+    "ace": {
+        "search": {
+            "@backwards": "false",
+            "@highlightmatches": "true",
+            "@matchcase": "false",
+            "@preservecase": "false",
+            "@regex": "false",
+            "@wholeword": "false",
+            "@wraparound": "true"
+        }
+    },
+    "breakpoints": {
+        "json()": [
+            {
+                "path": "/assembly_line.mos",
+                "line": 22,
+                "column": 4,
+                "text": "assembly_line.mos",
+                "content": "    W: array (C) of integer",
+                "time": 1595146846018,
+                "enabled": true
+            }
+        ]
+    },
+    "console": {
+        "@expanded": true,
+        "@height": "300",
+        "@maximized": "false",
+        "json()": {
+            "meta": {
+                "accessList": [
+                    "tab5"
+                ]
+            },
+            "name": "pane1",
+            "nodes": [
+                {
+                    "type": "tab",
+                    "name": "tab5",
+                    "path": "",
+                    "className": [
+                        "tab5"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1595143950682
+                        },
+                        "filter": true,
+                        "title": "Compile - Idle",
+                        "tooltip": "Compile - Idle",
+                        "output": {
+                            "id": "build",
+                            "width": 722,
+                            "height": 268,
+                            "config": {
+                                "name": "Compile",
+                                "toolbar": false
+                            }
+                        }
+                    },
+                    "editorType": "output",
+                    "active": true
+                }
+            ],
+            "skin": "editor_tab",
+            "skinset": "default",
+            "type": "pane"
+        }
+    },
+    "ext": {
+        "counters": {
+            "@ace": 2,
+            "@acestatus": 2,
+            "@base-step-wizard": 2,
+            "@divider": 4,
+            "@document": 10,
+            "@editorswitch": 2,
+            "@fico.vdl.attributes-panel": 1,
+            "@fico.vdl.toolbox-panel": 1,
+            "@form": 4,
+            "@menu": 3,
+            "@menuitem": 8,
+            "@pane": 3,
+            "@session": 10,
+            "@tab": 10,
+            "@undoManager": 10,
+            "@welcome": 1
+        }
+    },
+    "findinfiles": {
+        "@console": "true",
+        "@matchcase": "false",
+        "@regex": "false",
+        "@scope": "selection",
+        "@wholeword": "false"
+    },
+    "local": {
+        "window": {
+            "@fullscreen": false,
+            "@maximized": false,
+            "@minimized": false,
+            "@position": "-78:0",
+            "@size": "934:709"
+        }
+    },
+    "menus": {
+        "@minimized": "false"
+    },
+    "nak": {
+        "@installed": true
+    },
+    "od": {
+        "@last-run-config": "path:assembly_line.mos"
+    },
+    "panecycle": {
+        "json()": [
+            "tab1",
+            "tab5"
+        ]
+    },
+    "panels": {
+        "@active-left": "tree",
+        "@active-right": "none",
+        "@width-left": 160,
+        "commands.panel": {
+            "@enabled": "false",
+            "@name": "commands.panel"
+        },
+        "debugger": {
+            "@enabled": "true",
+            "@name": "debugger"
+        },
+        "fico.ide.language.mosel.modules-panel": {
+            "@enabled": "true",
+            "@name": "fico.ide.language.mosel.modules-panel"
+        },
+        "fico.om.sidebar": {
+            "@enabled": "true",
+            "@name": "fico.om.sidebar"
+        },
+        "fico.vdl.attributes-panel0": {
+            "@enabled": "false",
+            "@name": "fico.vdl.attributes-panel0"
+        },
+        "fico.vdl.toolbox-panel0": {
+            "@enabled": "false",
+            "@name": "fico.vdl.toolbox-panel0"
+        },
+        "navigate": {
+            "@enabled": "false",
+            "@name": "navigate"
+        },
+        "outline": {
+            "@enabled": "true",
+            "@name": "outline"
+        },
+        "tree": {
+            "@enabled": "true",
+            "@name": "tree"
+        }
+    },
+    "projecttree": {
+        "@scrollpos": 14,
+        "expanded": {
+            "json()": [
+                "/",
+                "/optimization methods"
+            ]
+        }
+    },
+    "recentfiles": {
+        "json()": [
+            {
+                "type": "tab",
+                "name": "tab7",
+                "path": "/optimization methods/Lecture_18032020_chesssetproblem_two_matrix_formulation.mos",
+                "className": [
+                    "tab7",
+                    "focus"
+                ],
+                "document": {
+                    "changed": false,
+                    "meta": {
+                        "timestamp": 1584531305931
+                    },
+                    "filter": true,
+                    "title": "Lecture_18032020_chesssetproblem_two_matrix_formulation.mos",
+                    "tooltip": "/optimization methods/Lecture_18032020_chesssetproblem_two_matrix_formulation.mos",
+                    "ace": {}
+                },
+                "editorType": "ace",
+                "active": true
+            },
+            {
+                "type": "tab",
+                "name": "tab2",
+                "path": "/optimization methods/Lecture_25032020_barge_loading.mos",
+                "className": [
+                    "tab2"
+                ],
+                "document": {
+                    "changed": false,
+                    "meta": {
+                        "timestamp": 1585138865621
+                    },
+                    "filter": true,
+                    "title": "Lecture_25032020_barge_loading.mos",
+                    "tooltip": "/optimization methods/Lecture_25032020_barge_loading.mos",
+                    "ace": {}
+                },
+                "editorType": "ace",
+                "active": false
+            },
+            {
+                "type": "tab",
+                "name": "tab0",
+                "path": "/readme.html",
+                "className": [
+                    "tab0"
+                ],
+                "document": {
+                    "changed": false,
+                    "meta": {
+                        "timestamp": 1595142700492
+                    },
+                    "filter": true,
+                    "title": "Welcome",
+                    "tooltip": "/readme.html",
+                    "welcome": {}
+                },
+                "editorType": "welcome",
+                "active": false
+            }
+        ]
+    },
+    "tabs": {
+        "json()": {
+            "focus": "/assembly_line.mos",
+            "meta": {
+                "accessList": [
+                    "tab1",
+                    "tab4",
+                    "tab3",
+                    "tab6",
+                    "tab9",
+                    "tab8"
+                ]
+            },
+            "name": "pane0",
+            "nodes": [
+                {
+                    "type": "tab",
+                    "name": "tab1",
+                    "path": "/assembly_line.mos",
+                    "className": [
+                        "tab1",
+                        "focus"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1595150389527
+                        },
+                        "filter": true,
+                        "title": "assembly_line.mos",
+                        "tooltip": "/assembly_line.mos",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": true
+                },
+                {
+                    "type": "tab",
+                    "name": "tab3",
+                    "path": "/optimization methods/Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos",
+                    "className": [
+                        "tab3"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1585595426956
+                        },
+                        "filter": true,
+                        "title": "Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos",
+                        "tooltip": "/optimization methods/Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab4",
+                    "path": "/optimization methods/Lecture_30032020_primal_dual_problem_test_1_exercise_2_abstract_form.mos",
+                    "className": [
+                        "tab4"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1585583418976
+                        },
+                        "filter": true,
+                        "title": "Lecture_30032020_primal_dual_problem_test_1_exercise_2_abstract_form.mos",
+                        "tooltip": "/optimization methods/Lecture_30032020_primal_dual_problem_test_1_exercise_2_abstract_form.mos",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab6",
+                    "path": "/optimization methods/Lecture_30032020_primal_dual_problem_test_DOESNT_WORK_uses_production_problem_notation(not very clear).mos",
+                    "className": [
+                        "tab6"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1585582912649
+                        },
+                        "filter": true,
+                        "title": "Lecture_30032020_primal_dual_problem_test_DOESNT_WORK_uses_production_problem_notation(not very clear).mos",
+                        "tooltip": "/optimization methods/Lecture_30032020_primal_dual_problem_test_DOESNT_WORK_uses_production_problem_notation(not very clear).mos",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab8",
+                    "path": "/optimization methods/Untitled1",
+                    "className": [
+                        "changed",
+                        "tab8"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "newfile": true,
+                            "timestamp": 1595150043681
+                        },
+                        "filter": true,
+                        "title": "Untitled1",
+                        "tooltip": "/optimization methods/Untitled1",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab9",
+                    "path": "/OM_EXAM/test_Exam",
+                    "className": [
+                        "tab9"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1595150151944
+                        },
+                        "filter": true,
+                        "title": "test_Exam",
+                        "tooltip": "/OM_EXAM/test_Exam",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                }
+            ],
+            "skin": "editor_tab",
+            "skinset": "default",
+            "type": "pane"
+        }
+    },
+    "tree_selection": {
+        "json()": [
+            "/optimization methods/Lecture_30032020_primal_dual_problem_test_1_exercise_2_abstract_form.mos"
+        ]
+    },
+    "welcome": {
+        "@first": true
+    }
+}

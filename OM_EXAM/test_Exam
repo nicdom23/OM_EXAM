@@ -1,0 +1,15 @@
+model ModelName
+  options noimplicit
+  uses "mmxprs"
+  ! uses "mminsight" ! uncomment this line for an Xpress Insight model
+
+  declarations
+  c = 10
+    a : array (10) bool
+    Objective:linctr
+  end-declarations
+
+  writeln("Begin running model")
+  !...
+  writeln("End running model")
+end-model

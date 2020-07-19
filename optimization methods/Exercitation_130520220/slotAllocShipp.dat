@@ -1,0 +1,473 @@
+! Data File for 'ShippingSlotAllocation.mos'
+
+FR: [("SIN" "RTM" "DC20")  1050   ("SIN" "RTM" "DC40")2100
+     ("SIN" "RTM" "RC20")  2000   ("SIN" "RTM" "RC40")3400
+     ("SIN" "FXT" "DC20")  1050   ("SIN" "FXT" "DC40")2100
+     ("SIN" "FXT" "RC20")  2000   ("SIN" "FXT" "RC40")3400
+     ("SIN" "BRV" "DC20")  1050   ("SIN" "BRV" "DC40")2100
+     ("SIN" "BRV" "RC20")  2000   ("SIN" "BRV" "RC40")3400
+     ("SIN" "LEH" "DC20")  1050   ("SIN" "LEH" "DC40")2100
+     ("SIN" "LEH" "RC20")  2000   ("SIN" "LEH" "RC40")3400
+     ("HKG" "RTM" "DC20")  1150   ("HKG" "RTM" "DC40")2300
+     ("HKG" "RTM" "RC20")  2200   ("HKG" "RTM" "RC40")4000
+     ("HKG" "FXT" "DC20")  1150   ("HKG" "FXT" "DC40")2300
+     ("HKG" "FXT" "RC20")  2200   ("HKG" "FXT" "RC40")4000
+     ("HKG" "BRV" "DC20")  1150   ("HKG" "BRV" "DC40")2300
+     ("HKG" "BRV" "RC20")  2200   ("HKG" "BRV" "RC40")4000
+     ("HKG" "LEH" "DC20")  1150   ("HKG" "LEH" "DC40")2300
+     ("HKG" "LEH" "RC20")  2200   ("HKG" "LEH" "RC40")4000
+     ("KEL" "RTM" "DC20")  1150   ("KEL" "RTM" "DC40")2300
+     ("KEL" "RTM" "RC20")  2100   ("KEL" "RTM" "RC40")3800
+     ("KEL" "FXT" "DC20")  1150   ("KEL" "FXT" "DC40")2300
+     ("KEL" "FXT" "RC20")  2100   ("KEL" "FXT" "RC40")3800
+     ("KEL" "BRV" "DC20")  1150   ("KEL" "BRV" "DC40")2300
+     ("KEL" "BRV" "RC20")  2100   ("KEL" "BRV" "RC40")3800
+     ("KEL" "LEH" "DC20")  1150   ("KEL" "LEH" "DC40")2300
+     ("KEL" "LEH" "RC20")  2100   ("KEL" "LEH" "RC40")3800
+     ("TYO" "RTM" "DC20")  1400   ("TYO" "RTM" "DC40")2800
+     ("TYO" "RTM" "RC20")  2200   ("TYO" "RTM" "RC40")4000
+     ("TYO" "FXT" "DC20")  1400   ("TYO" "FXT" "DC40")2800
+     ("TYO" "FXT" "RC20")  2200   ("TYO" "FXT" "RC40")4000
+     ("TYO" "BRV" "DC20")  1400   ("TYO" "BRV" "DC40")2800
+     ("TYO" "BRV" "RC20")  2200   ("TYO" "BRV" "RC40")4000
+     ("TYO" "LEH" "DC20")  1400   ("TYO" "LEH" "DC40")2800
+     ("TYO" "LEH" "RC20")  2200   ("TYO" "LEH" "RC40")4000
+     ("NGO" "RTM" "DC20")  1150   ("NGO" "RTM" "DC40")2300
+     ("NGO" "RTM" "RC20")  2200   ("NGO" "RTM" "RC40")4000
+     ("NGO" "FXT" "DC20")  1150   ("NGO" "FXT" "DC40")2300
+     ("NGO" "FXT" "RC20")  2200   ("NGO" "FXT" "RC40")4000
+     ("NGO" "BRV" "DC20")  1150   ("NGO" "BRV" "DC40")2300
+     ("NGO" "BRV" "RC20")  2200   ("NGO" "BRV" "RC40")4000
+     ("NGO" "LEH" "DC20")  1150   ("NGO" "LEH" "DC40")2300
+     ("NGO" "LEH" "RC20")  2200   ("NGO" "LEH" "RC40")4000
+     ("UKB" "RTM" "DC20")  1400   ("UKB" "RTM" "DC40")2800
+     ("UKB" "RTM" "RC20")  2200   ("UKB" "RTM" "RC40")4000
+     ("UKB" "FXT" "DC20")  1400   ("UKB" "FXT" "DC40")2800
+     ("UKB" "FXT" "RC20")  2200   ("UKB" "FXT" "RC40")4000
+     ("UKB" "BRV" "DC20")  1400   ("UKB" "BRV" "DC40")2800
+     ("UKB" "BRV" "RC20")  2200   ("UKB" "BRV" "RC40")4000
+     ("UKB" "LEH" "DC20")  1400   ("UKB" "LEH" "DC40")2800
+     ("UKB" "LEH" "RC20")  2200   ("UKB" "LEH" "RC40")4000
+     ("KHH" "RTM" "DC20")  1150   ("KHH" "RTM" "DC40")2300
+     ("KHH" "RTM" "RC20")  2100   ("KHH" "RTM" "RC40")3800
+     ("KHH" "FXT" "DC20")  1150   ("KHH" "FXT" "DC40")2300
+     ("KHH" "FXT" "RC20")  2100   ("KHH" "FXT" "RC40")3800
+     ("KHH" "BRV" "DC20")  1150   ("KHH" "BRV" "DC40")2300
+     ("KHH" "BRV" "RC20")  2100   ("KHH" "BRV" "RC40")3800
+     ("KHH" "LEH" "DC20")  1150   ("KHH" "LEH" "DC40")2300
+     ("KHH" "LEH" "RC20")  2100   ("KHH" "LEH" "RC40")3800 ]
+
+VC: [("SIN" "RTM" "DC20")   406   ("SIN" "RTM" "DC40") 515
+     ("SIN" "RTM" "RC20")   630   ("SIN" "RTM" "RC40") 779
+     ("SIN" "FXT" "DC20")   259   ("SIN" "FXT" "DC40") 313
+     ("SIN" "FXT" "RC20")   454   ("SIN" "FXT" "RC40") 549
+     ("SIN" "BRV" "DC20")   296   ("SIN" "BRV" "DC40") 347
+     ("SIN" "BRV" "RC20")   479   ("SIN" "BRV" "RC40") 573
+     ("SIN" "LEH" "DC20")   301   ("SIN" "LEH" "DC40") 352
+     ("SIN" "LEH" "RC20")   581   ("SIN" "LEH" "RC40") 676
+     ("HKG" "RTM" "DC20")   518   ("HKG" "RTM" "DC40") 674
+     ("HKG" "RTM" "RC20")   815   ("HKG" "RTM" "RC40")1055
+     ("HKG" "FXT" "DC20")   410   ("HKG" "FXT" "DC40") 562
+     ("HKG" "FXT" "RC20")   684   ("HKG" "FXT" "RC40") 821
+     ("HKG" "BRV" "DC20")   506   ("HKG" "BRV" "DC40") 662
+     ("HKG" "BRV" "RC20")   867   ("HKG" "BRV" "RC40")1107
+     ("HKG" "LEH" "DC20")   462   ("HKG" "LEH" "DC40") 617
+     ("HKG" "LEH" "RC20")   814   ("HKG" "LEH" "RC40")1055
+     ("KEL" "RTM" "DC20")   413   ("KEL" "RTM" "DC40") 515
+     ("KEL" "RTM" "RC20")   488   ("KEL" "RTM" "RC40") 590
+     ("KEL" "FXT" "DC20")   307   ("KEL" "FXT" "DC40") 405
+     ("KEL" "FXT" "RC20")   361   ("KEL" "FXT" "RC40") 459
+     ("KEL" "BRV" "DC20")   401   ("KEL" "BRV" "DC40") 503
+     ("KEL" "BRV" "RC20")   539   ("KEL" "BRV" "RC40") 641
+     ("KEL" "LEH" "DC20")   462   ("KEL" "LEH" "DC40") 460
+     ("KEL" "LEH" "RC20")   491   ("KEL" "LEH" "RC40") 593
+     ("TYO" "RTM" "DC20")   545   ("TYO" "RTM" "DC40") 717
+     ("TYO" "RTM" "RC20")   790   ("TYO" "RTM" "RC40") 963
+     ("TYO" "FXT" "DC20")   410   ("TYO" "FXT" "DC40") 578
+     ("TYO" "FXT" "RC20")   684   ("TYO" "FXT" "RC40") 853
+     ("TYO" "BRV" "DC20")   505   ("TYO" "BRV" "DC40") 678
+     ("TYO" "BRV" "RC20")   678   ("TYO" "BRV" "RC40")1039
+     ("TYO" "LEH" "DC20")   461   ("TYO" "LEH" "DC40") 633
+     ("TYO" "LEH" "RC20")   633   ("TYO" "LEH" "RC40") 989
+     ("NGO" "RTM" "DC20")   471   ("NGO" "RTM" "DC40") 583
+     ("NGO" "RTM" "RC20")   620   ("NGO" "RTM" "RC40") 779
+     ("NGO" "FXT" "DC20")   337   ("NGO" "FXT" "DC40") 445
+     ("NGO" "FXT" "RC20")   514   ("NGO" "FXT" "RC40") 676
+     ("NGO" "BRV" "DC20")   432   ("NGO" "BRV" "DC40") 545
+     ("NGO" "BRV" "RC20")   697   ("NGO" "BRV" "RC40") 858
+     ("NGO" "LEH" "DC20")   388   ("NGO" "LEH" "DC40") 500
+     ("NGO" "LEH" "RC20")   647   ("NGO" "LEH" "RC40") 810
+     ("UKB" "RTM" "DC20")   671   ("UKB" "RTM" "DC40") 847
+     ("UKB" "RTM" "RC20")   908   ("UKB" "RTM" "RC40")1128
+     ("UKB" "FXT" "DC20")   562   ("UKB" "FXT" "DC40") 735
+     ("UKB" "FXT" "RC20")   777   ("UKB" "FXT" "RC40")1001
+     ("UKB" "BRV" "DC20")   658   ("UKB" "BRV" "DC40") 835
+     ("UKB" "BRV" "RC20")   961   ("UKB" "BRV" "RC40")1189
+     ("UKB" "LEH" "DC20")   615   ("UKB" "LEH" "DC40") 792
+     ("UKB" "LEH" "RC20")   911   ("UKB" "LEH" "RC40")1142
+     ("KHH" "RTM" "DC20")   368   ("KHH" "RTM" "DC40") 418
+     ("KHH" "RTM" "RC20")   528   ("KHH" "RTM" "RC40") 578
+     ("KHH" "FXT" "DC20")   261   ("KHH" "FXT" "DC40") 308
+     ("KHH" "FXT" "RC20")   400   ("KHH" "FXT" "RC40") 447
+     ("KHH" "BRV" "DC20")   355   ("KHH" "BRV" "DC40") 406
+     ("KHH" "BRV" "RC20")   580   ("KHH" "BRV" "RC40") 630
+     ("KHH" "LEH" "DC20")   313   ("KHH" "LEH" "DC40") 364
+     ("KHH" "LEH" "RC20")   533   ("KHH" "LEH" "RC40") 581 ]
+
+EC: [("SIN" "RTM" "DC20")   283   ("SIN" "RTM" "DC40") 365
+     ("SIN" "RTM" "RC20")   283   ("SIN" "RTM" "RC40") 365
+     ("SIN" "FXT" "DC20")   196   ("SIN" "FXT" "DC40") 278
+     ("SIN" "FXT" "RC20")   196   ("SIN" "FXT" "RC40") 278
+     ("SIN" "BRV" "DC20")   198   ("SIN" "BRV" "DC40") 280
+     ("SIN" "BRV" "RC20")   198   ("SIN" "BRV" "RC40") 280
+     ("SIN" "LEH" "DC20")   219   ("SIN" "LEH" "DC40") 281
+     ("SIN" "LEH" "RC20")   219   ("SIN" "LEH" "RC40") 281
+     ("HKG" "RTM" "DC20")   426   ("HKG" "RTM" "DC40") 518
+     ("HKG" "RTM" "RC20")   426   ("HKG" "RTM" "RC40") 518
+     ("HKG" "FXT" "DC20")   331   ("HKG" "FXT" "DC40") 423
+     ("HKG" "FXT" "RC20")   331   ("HKG" "FXT" "RC40") 423
+     ("HKG" "BRV" "DC20")   363   ("HKG" "BRV" "DC40") 455
+     ("HKG" "BRV" "RC20")   363   ("HKG" "BRV" "RC40") 455
+     ("HKG" "LEH" "DC20")   363   ("HKG" "LEH" "DC40") 455
+     ("HKG" "LEH" "RC20")   363   ("HKG" "LEH" "RC40") 455
+     ("KEL" "RTM" "DC20")   340   ("KEL" "RTM" "DC40") 375
+     ("KEL" "RTM" "RC20")   340   ("KEL" "RTM" "RC40") 375
+     ("KEL" "FXT" "DC20")   220   ("KEL" "FXT" "DC40") 255
+     ("KEL" "FXT" "RC20")   220   ("KEL" "FXT" "RC40") 255
+     ("KEL" "BRV" "DC20")   252   ("KEL" "BRV" "DC40") 287
+     ("KEL" "BRV" "RC20")   252   ("KEL" "BRV" "RC40") 287
+     ("KEL" "LEH" "DC20")   252   ("KEL" "LEH" "DC40") 286
+     ("KEL" "LEH" "RC20")   252   ("KEL" "LEH" "RC40") 286
+     ("TYO" "RTM" "DC20")   452   ("TYO" "RTM" "DC40") 560
+     ("TYO" "RTM" "RC20")   452   ("TYO" "RTM" "RC40") 560
+     ("TYO" "FXT" "DC20")   331   ("TYO" "FXT" "DC40") 440
+     ("TYO" "FXT" "RC20")   331   ("TYO" "FXT" "RC40") 440
+     ("TYO" "BRV" "DC20")   363   ("TYO" "BRV" "DC40") 472
+     ("TYO" "BRV" "RC20")   363   ("TYO" "BRV" "RC40") 472
+     ("TYO" "LEH" "DC20")   363   ("TYO" "LEH" "DC40") 471
+     ("TYO" "LEH" "RC20")   363   ("TYO" "LEH" "RC40") 471
+     ("NGO" "RTM" "DC20")   345   ("NGO" "RTM" "DC40") 395
+     ("NGO" "RTM" "RC20")   345   ("NGO" "RTM" "RC40") 395
+     ("NGO" "FXT" "DC20")   225   ("NGO" "FXT" "DC40") 275
+     ("NGO" "FXT" "RC20")   225   ("NGO" "FXT" "RC40") 275
+     ("NGO" "BRV" "DC20")   257   ("NGO" "BRV" "DC40") 307
+     ("NGO" "BRV" "RC20")   257   ("NGO" "BRV" "RC40") 307
+     ("NGO" "LEH" "DC20")   257   ("NGO" "LEH" "DC40") 307
+     ("NGO" "LEH" "RC20")   257   ("NGO" "LEH" "RC40") 307
+     ("UKB" "RTM" "DC20")   452   ("UKB" "RTM" "DC40") 560
+     ("UKB" "RTM" "RC20")   452   ("UKB" "RTM" "RC40") 560
+     ("UKB" "FXT" "DC20")   331   ("UKB" "FXT" "DC40") 440
+     ("UKB" "FXT" "RC20")   331   ("UKB" "FXT" "RC40") 440
+     ("UKB" "BRV" "DC20")   363   ("UKB" "BRV" "DC40") 472
+     ("UKB" "BRV" "RC20")   363   ("UKB" "BRV" "RC40") 472
+     ("UKB" "LEH" "DC20")   363   ("UKB" "LEH" "DC40") 471
+     ("UKB" "LEH" "RC20")   363   ("UKB" "LEH" "RC40") 471
+     ("KHH" "RTM" "DC20")   292   ("KHH" "RTM" "DC40") 342
+     ("KHH" "RTM" "RC20")   292   ("KHH" "RTM" "RC40") 342
+     ("KHH" "FXT" "DC20")   197   ("KHH" "FXT" "DC40") 247
+     ("KHH" "FXT" "RC20")   197   ("KHH" "FXT" "RC40") 247
+     ("KHH" "BRV" "DC20")   229   ("KHH" "BRV" "DC40") 279
+     ("KHH" "BRV" "RC20")   229   ("KHH" "BRV" "RC40") 279
+     ("KHH" "LEH" "DC20")   229   ("KHH" "LEH" "DC40") 279
+     ("KHH" "LEH" "RC20")   229   ("KHH" "LEH" "RC40") 279 ]
+
+F: [ ("SIN" "RTM" "DC20")   100   ("SIN" "RTM" "DC40")  100
+     ("SIN" "RTM" "RC20")   100   ("SIN" "RTM" "RC40")  100
+     ("SIN" "FXT" "DC20")    50   ("SIN" "FXT" "DC40")   50
+     ("SIN" "FXT" "RC20")    50   ("SIN" "FXT" "RC40")   50
+     ("SIN" "BRV" "DC20")    50   ("SIN" "BRV" "DC40")   50
+     ("SIN" "BRV" "RC20")    50   ("SIN" "BRV" "RC40")   50
+     ("SIN" "LEH" "DC20")   100   ("SIN" "LEH" "DC40")  100
+     ("SIN" "LEH" "RC20")   100   ("SIN" "LEH" "RC40")  100
+     ("HKG" "RTM" "DC20")    60   ("HKG" "RTM" "DC40")   60
+     ("HKG" "RTM" "RC20")    60   ("HKG" "RTM" "RC40")   60
+     ("HKG" "FXT" "DC20")    60   ("HKG" "FXT" "DC40")   60
+     ("HKG" "FXT" "RC20")    60   ("HKG" "FXT" "RC40")   60
+     ("HKG" "BRV" "DC20")    50   ("HKG" "BRV" "DC40")   50
+     ("HKG" "BRV" "RC20")    50   ("HKG" "BRV" "RC40")   50
+     ("HKG" "LEH" "DC20")    50   ("HKG" "LEH" "DC40")   50
+     ("HKG" "LEH" "RC20")    50   ("HKG" "LEH" "RC40")   50
+     ("KEL" "RTM" "DC20")    40   ("KEL" "RTM" "DC40")   40
+     ("KEL" "RTM" "RC20")    40   ("KEL" "RTM" "RC40")   40
+     ("KEL" "FXT" "DC20")    80   ("KEL" "FXT" "DC40")   80
+     ("KEL" "FXT" "RC20")    80   ("KEL" "FXT" "RC40")   80
+     ("KEL" "BRV" "DC20")    60   ("KEL" "BRV" "DC40")   60
+     ("KEL" "BRV" "RC20")    60   ("KEL" "BRV" "RC40")   60
+     ("KEL" "LEH" "DC20")    50   ("KEL" "LEH" "DC40")   50
+     ("KEL" "LEH" "RC20")    50   ("KEL" "LEH" "RC40")   50
+     ("TYO" "RTM" "DC20")    90   ("TYO" "RTM" "DC40")   90
+     ("TYO" "RTM" "RC20")    90   ("TYO" "RTM" "RC40")   90
+     ("TYO" "FXT" "DC20")    80   ("TYO" "FXT" "DC40")   80
+     ("TYO" "FXT" "RC20")    80   ("TYO" "FXT" "RC40")   80
+     ("TYO" "BRV" "DC20")    40   ("TYO" "BRV" "DC40")   40
+     ("TYO" "BRV" "RC20")    40   ("TYO" "BRV" "RC40")   40
+     ("TYO" "LEH" "DC20")    50   ("TYO" "LEH" "DC40")   50
+     ("TYO" "LEH" "RC20")    50   ("TYO" "LEH" "RC40")   50
+     ("NGO" "RTM" "DC20")    80   ("NGO" "RTM" "DC40")   80
+     ("NGO" "RTM" "RC20")    80   ("NGO" "RTM" "RC40")   80
+     ("NGO" "FXT" "DC20")    60   ("NGO" "FXT" "DC40")   60
+     ("NGO" "FXT" "RC20")    60   ("NGO" "FXT" "RC40")   60
+     ("NGO" "BRV" "DC20")    10   ("NGO" "BRV" "DC40")   10
+     ("NGO" "BRV" "RC20")    10   ("NGO" "BRV" "RC40")   10
+     ("NGO" "LEH" "DC20")    50   ("NGO" "LEH" "DC40")   50
+     ("NGO" "LEH" "RC20")    50   ("NGO" "LEH" "RC40")   50
+     ("UKB" "RTM" "DC20")    50   ("UKB" "RTM" "DC40")   50
+     ("UKB" "RTM" "RC20")    50   ("UKB" "RTM" "RC40")   50
+     ("UKB" "FXT" "DC20")    50   ("UKB" "FXT" "DC40")   50
+     ("UKB" "FXT" "RC20")    50   ("UKB" "FXT" "RC40")   50
+     ("UKB" "BRV" "DC20")    50   ("UKB" "BRV" "DC40")   50
+     ("UKB" "BRV" "RC20")    50   ("UKB" "BRV" "RC40")   50
+     ("UKB" "LEH" "DC20")    50   ("UKB" "LEH" "DC40")   50
+     ("UKB" "LEH" "RC20")    50   ("UKB" "LEH" "RC40")   50
+     ("KHH" "RTM" "DC20")    50   ("KHH" "RTM" "DC40")   50
+     ("KHH" "RTM" "RC20")    50   ("KHH" "RTM" "RC40")   50
+     ("KHH" "FXT" "DC20")    70   ("KHH" "FXT" "DC40")   70
+     ("KHH" "FXT" "RC20")    70   ("KHH" "FXT" "RC40")   70
+     ("KHH" "BRV" "DC20")    70   ("KHH" "BRV" "DC40")   70
+     ("KHH" "BRV" "RC20")    70   ("KHH" "BRV" "RC40")   70
+     ("KHH" "LEH" "DC20")    70   ("KHH" "LEH" "DC40")   70
+     ("KHH" "LEH" "RC20")    70   ("KHH" "LEH" "RC40")   70
+     ("RTM" "SIN" "DC20")    80   ("RTM" "SIN" "DC40")   80
+     ("RTM" "SIN" "RC20")    80   ("RTM" "SIN" "RC40")   80
+     ("FXT" "SIN" "DC20")    40   ("FXT" "SIN" "DC40")   40
+     ("FXT" "SIN" "RC20")    40   ("FXT" "SIN" "RC40")   40
+     ("BRV" "SIN" "DC20")    50   ("BRV" "SIN" "DC40")   50
+     ("BRV" "SIN" "RC20")    50   ("BRV" "SIN" "RC40")   50
+     ("LEH" "SIN" "DC20")    90   ("LEH" "SIN" "DC40")   90
+     ("LEH" "SIN" "RC20")    90   ("LEH" "SIN" "RC40")   90
+     ("RTM" "HKG" "DC20")    50   ("RTM" "HKG" "DC40")   50
+     ("RTM" "HKG" "RC20")    50   ("RTM" "HKG" "RC40")   50
+     ("FXT" "HKG" "DC20")    60   ("FXT" "HKG" "DC40")   60
+     ("FXT" "HKG" "RC20")    60   ("FXT" "HKG" "RC40")   60
+     ("BRV" "HKG" "DC20")    50   ("BRV" "HKG" "DC40")   50
+     ("BRV" "HKG" "RC20")    50   ("BRV" "HKG" "RC40")   50
+     ("LEH" "HKG" "DC20")    30   ("LEH" "HKG" "DC40")   30
+     ("LEH" "HKG" "RC20")    30   ("LEH" "HKG" "RC40")   30
+     ("RTM" "KEL" "DC20")    30   ("RTM" "KEL" "DC40")   30
+     ("RTM" "KEL" "RC20")    30   ("RTM" "KEL" "RC40")   30
+     ("FXT" "KEL" "DC20")    70   ("FXT" "KEL" "DC40")   70
+     ("FXT" "KEL" "RC20")    70   ("FXT" "KEL" "RC40")   70
+     ("BRV" "KEL" "DC20")    50   ("BRV" "KEL" "DC40")   50
+     ("BRV" "KEL" "RC20")    50   ("BRV" "KEL" "RC40")   50
+     ("LEH" "KEL" "DC20")    20   ("LEH" "KEL" "DC40")   20
+     ("LEH" "KEL" "RC20")    20   ("LEH" "KEL" "RC40")   20
+     ("RTM" "TYO" "DC20")    70   ("RTM" "TYO" "DC40")   70
+     ("RTM" "TYO" "RC20")    70   ("RTM" "TYO" "RC40")   70
+     ("FXT" "TYO" "DC20")    70   ("FXT" "TYO" "DC40")   70
+     ("FXT" "TYO" "RC20")    70   ("FXT" "TYO" "RC40")   70
+     ("BRV" "TYO" "DC20")    30   ("BRV" "TYO" "DC40")   30
+     ("BRV" "TYO" "RC20")    30   ("BRV" "TYO" "RC40")   30
+     ("LEH" "TYO" "DC20")    30   ("LEH" "TYO" "DC40")   30
+     ("LEH" "TYO" "RC20")    30   ("LEH" "TYO" "RC40")   30
+     ("RTM" "NGO" "DC20")    50   ("RTM" "NGO" "DC40")   50
+     ("RTM" "NGO" "RC20")    50   ("RTM" "NGO" "RC40")   50
+     ("FXT" "NGO" "DC20")    60   ("FXT" "NGO" "DC40")   60
+     ("FXT" "NGO" "RC20")    60   ("FXT" "NGO" "RC40")   60
+     ("BRV" "NGO" "DC20")    10   ("BRV" "NGO" "DC40")   10
+     ("BRV" "NGO" "RC20")    10   ("BRV" "NGO" "RC40")   10
+     ("LEH" "NGO" "DC20")    50   ("LEH" "NGO" "DC40")   50
+     ("LEH" "NGO" "RC20")    50   ("LEH" "NGO" "RC40")   50
+     ("RTM" "UKB" "DC20")    40   ("RTM" "UKB" "DC40")   40
+     ("RTM" "UKB" "RC20")    40   ("RTM" "UKB" "RC40")   40
+     ("FXT" "UKB" "DC20")    40   ("FXT" "UKB" "DC40")   40
+     ("FXT" "UKB" "RC20")    40   ("FXT" "UKB" "RC40")   40
+     ("BRV" "UKB" "DC20")    50   ("BRV" "UKB" "DC40")   50
+     ("BRV" "UKB" "RC20")    50   ("BRV" "UKB" "RC40")   50
+     ("LEH" "UKB" "DC20")    40   ("LEH" "UKB" "DC40")   40
+     ("LEH" "UKB" "RC20")    40   ("LEH" "UKB" "RC40")   40
+     ("RTM" "KHH" "DC20")    40   ("RTM" "KHH" "DC40")   40
+     ("RTM" "KHH" "RC20")    40   ("RTM" "KHH" "RC40")   40
+     ("FXT" "KHH" "DC20")    50   ("FXT" "KHH" "DC40")   50
+     ("FXT" "KHH" "RC20")    50   ("FXT" "KHH" "RC40")   50
+     ("BRV" "KHH" "DC20")    60   ("BRV" "KHH" "DC40")   60
+     ("BRV" "KHH" "RC20")    60   ("BRV" "KHH" "RC40")   60
+     ("LEH" "KHH" "DC20")    60   ("LEH" "KHH" "DC40")   60
+     ("LEH" "KHH" "RC20")    60   ("LEH" "KHH" "RC40")   60 ]
+
+
+WF: [("SIN" "RTM" "DC20")    19   ("SIN" "RTM" "DC40")  26
+     ("SIN" "RTM" "RC20")    19   ("SIN" "RTM" "RC40")  26
+     ("SIN" "FXT" "DC20")    17   ("SIN" "FXT" "DC40")  70
+     ("SIN" "FXT" "RC20")    17   ("SIN" "FXT" "RC40")  66
+     ("SIN" "BRV" "DC20")    19   ("SIN" "BRV" "DC40") 139
+     ("SIN" "BRV" "RC20")    19   ("SIN" "BRV" "RC40")  75
+     ("SIN" "LEH" "DC20")    19   ("SIN" "LEH" "DC40") 217
+     ("SIN" "LEH" "RC20")    19   ("SIN" "LEH" "RC40")  93
+     ("HKG" "RTM" "DC20")    19   ("HKG" "RTM" "DC40")  26
+     ("HKG" "RTM" "RC20")    19   ("HKG" "RTM" "RC40")  26
+     ("HKG" "FXT" "DC20")    17   ("HKG" "FXT" "DC40")  23
+     ("HKG" "FXT" "RC20")    17   ("HKG" "FXT" "RC40")  23
+     ("HKG" "BRV" "DC20")    19   ("HKG" "BRV" "DC40")  23
+     ("HKG" "BRV" "RC20")    19   ("HKG" "BRV" "RC40")  23
+     ("HKG" "LEH" "DC20")    19   ("HKG" "LEH" "DC40")  20
+     ("HKG" "LEH" "RC20")    19   ("HKG" "LEH" "RC40")  20
+     ("KEL" "RTM" "DC20")    19   ("KEL" "RTM" "DC40")  26
+     ("KEL" "RTM" "RC20")    19   ("KEL" "RTM" "RC40")  26
+     ("KEL" "FXT" "DC20")    17   ("KEL" "FXT" "DC40")  23
+     ("KEL" "FXT" "RC20")    17   ("KEL" "FXT" "RC40")  23
+     ("KEL" "BRV" "DC20")    19   ("KEL" "BRV" "DC40")  23
+     ("KEL" "BRV" "RC20")    19   ("KEL" "BRV" "RC40")  23
+     ("KEL" "LEH" "DC20")    19   ("KEL" "LEH" "DC40")  20
+     ("KEL" "LEH" "RC20")    19   ("KEL" "LEH" "RC40")  20
+     ("TYO" "RTM" "DC20")    19   ("TYO" "RTM" "DC40")  26
+     ("TYO" "RTM" "RC20")    19   ("TYO" "RTM" "RC40")  26
+     ("TYO" "FXT" "DC20")    17   ("TYO" "FXT" "DC40")  23
+     ("TYO" "FXT" "RC20")    17   ("TYO" "FXT" "RC40")  23
+     ("TYO" "BRV" "DC20")    19   ("TYO" "BRV" "DC40")  23
+     ("TYO" "BRV" "RC20")    19   ("TYO" "BRV" "RC40")  23
+     ("TYO" "LEH" "DC20")    19   ("TYO" "LEH" "DC40")  20
+     ("TYO" "LEH" "RC20")    19   ("TYO" "LEH" "RC40")  20
+     ("NGO" "RTM" "DC20")    19   ("NGO" "RTM" "DC40")  26
+     ("NGO" "RTM" "RC20")    19   ("NGO" "RTM" "RC40")  26
+     ("NGO" "FXT" "DC20")    17   ("NGO" "FXT" "DC40")  23
+     ("NGO" "FXT" "RC20")    17   ("NGO" "FXT" "RC40")  23
+     ("NGO" "BRV" "DC20")    19   ("NGO" "BRV" "DC40")  23
+     ("NGO" "BRV" "RC20")    19   ("NGO" "BRV" "RC40")  23
+     ("NGO" "LEH" "DC20")    19   ("NGO" "LEH" "DC40")  20
+     ("NGO" "LEH" "RC20")    19   ("NGO" "LEH" "RC40")  20
+     ("UKB" "RTM" "DC20")    19   ("UKB" "RTM" "DC40")  26
+     ("UKB" "RTM" "RC20")    19   ("UKB" "RTM" "RC40")  26
+     ("UKB" "FXT" "DC20")    17   ("UKB" "FXT" "DC40")  23
+     ("UKB" "FXT" "RC20")    17   ("UKB" "FXT" "RC40")  23
+     ("UKB" "BRV" "DC20")    19   ("UKB" "BRV" "DC40")  23
+     ("UKB" "BRV" "RC20")    19   ("UKB" "BRV" "RC40")  23
+     ("UKB" "LEH" "DC20")    19   ("UKB" "LEH" "DC40")  20
+     ("UKB" "LEH" "RC20")    19   ("UKB" "LEH" "RC40")  20
+     ("KHH" "RTM" "DC20")    19   ("KHH" "RTM" "DC40")  26
+     ("KHH" "RTM" "RC20")    19   ("KHH" "RTM" "RC40")  26
+     ("KHH" "FXT" "DC20")    17   ("KHH" "FXT" "DC40")  23
+     ("KHH" "FXT" "RC20")    17   ("KHH" "FXT" "RC40")  23
+     ("KHH" "BRV" "DC20")    19   ("KHH" "BRV" "DC40")  23
+     ("KHH" "BRV" "RC20")    19   ("KHH" "BRV" "RC40")  23
+     ("KHH" "LEH" "DC20")    19   ("KHH" "LEH" "DC40")  20
+     ("KHH" "LEH" "RC20")    19   ("KHH" "LEH" "RC40")  20 ]     
+
+DL: [("SIN" "RTM" "DC20")    25   ("SIN" "RTM" "DC40")   3
+     ("SIN" "RTM" "RC20")     0   ("SIN" "RTM" "RC40")   0
+     ("SIN" "FXT" "DC20")    42   ("SIN" "FXT" "DC40")   5
+     ("SIN" "FXT" "RC20")     0   ("SIN" "FXT" "RC40")   0
+     ("SIN" "BRV" "DC20")    65   ("SIN" "BRV" "DC40")   7
+     ("SIN" "BRV" "RC20")     0   ("SIN" "BRV" "RC40")   0
+     ("SIN" "LEH" "DC20")     5   ("SIN" "LEH" "DC40")   1
+     ("SIN" "LEH" "RC20")     0   ("SIN" "LEH" "RC40")   0
+     ("HKG" "RTM" "DC20")    10   ("HKG" "RTM" "DC40")  10
+     ("HKG" "RTM" "RC20")     0   ("HKG" "RTM" "RC40")   0
+     ("HKG" "FXT" "DC20")    20   ("HKG" "FXT" "DC40")  10
+     ("HKG" "FXT" "RC20")     0   ("HKG" "FXT" "RC40")   0
+     ("HKG" "BRV" "DC20")    40   ("HKG" "BRV" "DC40")  25
+     ("HKG" "BRV" "RC20")     0   ("HKG" "BRV" "RC40")   0
+     ("HKG" "LEH" "DC20")     2   ("HKG" "LEH" "DC40")   2
+     ("HKG" "LEH" "RC20")     0   ("HKG" "LEH" "RC40")   0
+     ("KEL" "RTM" "DC20")     4   ("KEL" "RTM" "DC40")   2
+     ("KEL" "RTM" "RC20")     0   ("KEL" "RTM" "RC40")   0
+     ("KEL" "FXT" "DC20")     8   ("KEL" "FXT" "DC40")   2
+     ("KEL" "FXT" "RC20")     0   ("KEL" "FXT" "RC40")   0
+     ("KEL" "BRV" "DC20")    20   ("KEL" "BRV" "DC40")  15
+     ("KEL" "BRV" "RC20")     0   ("KEL" "BRV" "RC40")   0
+     ("KEL" "LEH" "DC20")     1   ("KEL" "LEH" "DC40")   1
+     ("KEL" "LEH" "RC20")     0   ("KEL" "LEH" "RC40")   0
+     ("TYO" "RTM" "DC20")     2   ("TYO" "RTM" "DC40")   2
+     ("TYO" "RTM" "RC20")     0   ("TYO" "RTM" "RC40")   0
+     ("TYO" "FXT" "DC20")     2   ("TYO" "FXT" "DC40")   2
+     ("TYO" "FXT" "RC20")     0   ("TYO" "FXT" "RC40")   0
+     ("TYO" "BRV" "DC20")     1   ("TYO" "BRV" "DC40")   1
+     ("TYO" "BRV" "RC20")     0   ("TYO" "BRV" "RC40")   0
+     ("TYO" "LEH" "DC20")     1   ("TYO" "LEH" "DC40")   1
+     ("TYO" "LEH" "RC20")     0   ("TYO" "LEH" "RC40")   0
+     ("NGO" "RTM" "DC20")     4   ("NGO" "RTM" "DC40")   4
+     ("NGO" "RTM" "RC20")     0   ("NGO" "RTM" "RC40")   0
+     ("NGO" "FXT" "DC20")     5   ("NGO" "FXT" "DC40")   2
+     ("NGO" "FXT" "RC20")     0   ("NGO" "FXT" "RC40")   0
+     ("NGO" "BRV" "DC20")    16   ("NGO" "BRV" "DC40")   5
+     ("NGO" "BRV" "RC20")     0   ("NGO" "BRV" "RC40")   0
+     ("NGO" "LEH" "DC20")     1   ("NGO" "LEH" "DC40")   1
+     ("NGO" "LEH" "RC20")     0   ("NGO" "LEH" "RC40")   0
+     ("UKB" "RTM" "DC20")     2   ("UKB" "RTM" "DC40")   2
+     ("UKB" "RTM" "RC20")     0   ("UKB" "RTM" "RC40")   0
+     ("UKB" "FXT" "DC20")     3   ("UKB" "FXT" "DC40")   1
+     ("UKB" "FXT" "RC20")     0   ("UKB" "FXT" "RC40")   0
+     ("UKB" "BRV" "DC20")     3   ("UKB" "BRV" "DC40")   1
+     ("UKB" "BRV" "RC20")     0   ("UKB" "BRV" "RC40")   0
+     ("UKB" "LEH" "DC20")     1   ("UKB" "LEH" "DC40")   1
+     ("UKB" "LEH" "RC20")     0   ("UKB" "LEH" "RC40")   0
+     ("KHH" "RTM" "DC20")     7   ("KHH" "RTM" "DC40")  23
+     ("KHH" "RTM" "RC20")     0   ("KHH" "RTM" "RC40")   0
+     ("KHH" "FXT" "DC20")    15   ("KHH" "FXT" "DC40")   5
+     ("KHH" "FXT" "RC20")     0   ("KHH" "FXT" "RC40")   0
+     ("KHH" "BRV" "DC20")    23   ("KHH" "BRV" "DC40")  23
+     ("KHH" "BRV" "RC20")     0   ("KHH" "BRV" "RC40")   0
+     ("KHH" "LEH" "DC20")     1   ("KHH" "LEH" "DC40")   2
+     ("KHH" "LEH" "RC20")     0   ("KHH" "LEH" "RC40")   0 ]
+
+DU: [("SIN" "RTM" "DC20")    55   ("SIN" "RTM" "DC40")  35
+     ("SIN" "RTM" "RC20")    12   ("SIN" "RTM" "RC40")   3
+     ("SIN" "FXT" "DC20")    80   ("SIN" "FXT" "DC40")  29
+     ("SIN" "FXT" "RC20")    13   ("SIN" "FXT" "RC40")   3
+     ("SIN" "BRV" "DC20")   115   ("SIN" "BRV" "DC40")  36
+     ("SIN" "BRV" "RC20")    13   ("SIN" "BRV" "RC40")   3
+     ("SIN" "LEH" "DC20")    25   ("SIN" "LEH" "DC40")  20
+     ("SIN" "LEH" "RC20")    12   ("SIN" "LEH" "RC40")   3
+     ("HKG" "RTM" "DC20")    45   ("HKG" "RTM" "DC40")  41
+     ("HKG" "RTM" "RC20")     9   ("HKG" "RTM" "RC40")   9
+     ("HKG" "FXT" "DC20")    55   ("HKG" "FXT" "DC40")  50
+     ("HKG" "FXT" "RC20")     8   ("HKG" "FXT" "RC40")  10
+     ("HKG" "BRV" "DC20")    75   ("HKG" "BRV" "DC40")  70
+     ("HKG" "BRV" "RC20")     6   ("HKG" "BRV" "RC40")   9
+     ("HKG" "LEH" "DC20")    10   ("HKG" "LEH" "DC40")  18
+     ("HKG" "LEH" "RC20")     9   ("HKG" "LEH" "RC40")   8
+     ("KEL" "RTM" "DC20")    20   ("KEL" "RTM" "DC40")  27
+     ("KEL" "RTM" "RC20")    12   ("KEL" "RTM" "RC40")   5
+     ("KEL" "FXT" "DC20")    24   ("KEL" "FXT" "DC40")  29
+     ("KEL" "FXT" "RC20")     9   ("KEL" "FXT" "RC40")   2
+     ("KEL" "BRV" "DC20")    47   ("KEL" "BRV" "DC40")  45
+     ("KEL" "BRV" "RC20")     8   ("KEL" "BRV" "RC40")   1
+     ("KEL" "LEH" "DC20")    15   ("KEL" "LEH" "DC40")  19
+     ("KEL" "LEH" "RC20")     8   ("KEL" "LEH" "RC40")   2
+     ("TYO" "RTM" "DC20")    10   ("TYO" "RTM" "DC40")  29
+     ("TYO" "RTM" "RC20")     8   ("TYO" "RTM" "RC40")   5
+     ("TYO" "FXT" "DC20")    15   ("TYO" "FXT" "DC40")  26
+     ("TYO" "FXT" "RC20")     8   ("TYO" "FXT" "RC40")   5
+     ("TYO" "BRV" "DC20")    19   ("TYO" "BRV" "DC40")  31
+     ("TYO" "BRV" "RC20")    10   ("TYO" "BRV" "RC40")   5
+     ("TYO" "LEH" "DC20")    10   ("TYO" "LEH" "DC40")  23
+     ("TYO" "LEH" "RC20")     8   ("TYO" "LEH" "RC40")   5
+     ("NGO" "RTM" "DC20")    18   ("NGO" "RTM" "DC40")  37
+     ("NGO" "RTM" "RC20")     6   ("NGO" "RTM" "RC40")   5
+     ("NGO" "FXT" "DC20")    21   ("NGO" "FXT" "DC40")  25
+     ("NGO" "FXT" "RC20")     5   ("NGO" "FXT" "RC40")   5
+     ("NGO" "BRV" "DC20")    30   ("NGO" "BRV" "DC40")  36
+     ("NGO" "BRV" "RC20")     6   ("NGO" "BRV" "RC40")   5
+     ("NGO" "LEH" "DC20")    11   ("NGO" "LEH" "DC40")  20
+     ("NGO" "LEH" "RC20")     4   ("NGO" "LEH" "RC40")   5
+     ("UKB" "RTM" "DC20")    15   ("UKB" "RTM" "DC40")  29
+     ("UKB" "RTM" "RC20")     8   ("UKB" "RTM" "RC40")   5
+     ("UKB" "FXT" "DC20")    19   ("UKB" "FXT" "DC40")  26
+     ("UKB" "FXT" "RC20")     4   ("UKB" "FXT" "RC40")   5
+     ("UKB" "BRV" "DC20")    17   ("UKB" "BRV" "DC40")  30
+     ("UKB" "BRV" "RC20")     2   ("UKB" "BRV" "RC40")   5
+     ("UKB" "LEH" "DC20")    15   ("UKB" "LEH" "DC40")  30
+     ("UKB" "LEH" "RC20")     5   ("UKB" "LEH" "RC40")   5
+     ("KHH" "RTM" "DC20")    25   ("KHH" "RTM" "DC40")  45
+     ("KHH" "RTM" "RC20")     6   ("KHH" "RTM" "RC40")   6
+     ("KHH" "FXT" "DC20")    41   ("KHH" "FXT" "DC40")  28
+     ("KHH" "FXT" "RC20")     5   ("KHH" "FXT" "RC40")   6
+     ("KHH" "BRV" "DC20")    60   ("KHH" "BRV" "DC40")  50
+     ("KHH" "BRV" "RC20")     8   ("KHH" "BRV" "RC40")   6
+     ("KHH" "LEH" "DC20")    13   ("KHH" "LEH" "DC40")  25
+     ("KHH" "LEH" "RC20")     7   ("KHH" "LEH" "RC40")   6 ]
+
+
+CI:  [("RTM" "DC20") 20 ("RTM" "DC40") 10
+	("RTM" "RC20")  3 ("RTM" "RC40")  3
+      ("FXT" "DC20") 10 ("FXT" "DC40") 10
+	("FXT" "RC20")  2 ("FXT" "RC40")  1
+      ("BRV" "DC20") 30 ("BRV" "DC40") 15
+	("BRV" "RC20")  4 ("BRV" "RC40")  3
+	("LEH" "DC20")  5 ("LEH" "DC40")  3
+	("LEH" "RC20")  1 ("LEH" "RC40")  1 ]
+
+WE: [("DC20") 2.35
+     ("DC40") 3.45
+     ("RC20") 3.9
+     ("RC40") 5.1 ]
+

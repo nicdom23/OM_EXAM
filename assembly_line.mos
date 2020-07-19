@@ -1,0 +1,55 @@
+model ModelName
+  options noimplicit
+  uses "mmxprs"
+  ! uses "mminsight" ! uncomment this line for an Xpress Insight model
+
+  declarations
+
+
+
+    C = 10  !Cycle time
+
+    N = 10  !number of tasks
+    t : array(1..N) of integer !duration of tasks
+    J = 100 !max number of stages
+    x : array(1..N,1..J) of mpvar
+    P_i: array(1..N,1..N) of boolean
+
+    K = 10 !MAX identical parallel stations
+
+    W : array(1..K) of integer
+
+    y: array(1..K,1..J) of mpvar
+
+    Objective:linctr
+  end-declarations
+
+
+  Objective:= sum( j in 1..J, k in 1..K) W(k)*y(j,k)
+
+  !forall(i in 1..N)  do
+    !sum ( j in 1..J ) x(i,j) == 1
+  !    x(1,1) = false
+  !end-do
+
+
+
+
+  forall(j in 1..J) sum (i in 1..N) (t(i)*x(i,j)) <= sum( k in 1..K) (k*y(j,k)*C)
+
+
+  forall(j in 1..J) sum(k in 1..K) y(j,k) <= 1
+  
+  
+  forall (i in 1..N , j in 1..J) x(i,j) is_binary
+  forall (j in 1..J , k in 1..K) y(j,k) is_binary
+
+
+
+  writeln("Begin running model")
+
+  !minimise(Objective)
+
+
+  writeln("End running model")
+end-model

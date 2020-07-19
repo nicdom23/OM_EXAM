@@ -1,0 +1,48 @@
+model ModelName
+  options noimplicit
+  uses "mmxprs"
+  ! uses "mminsight" ! uncomment this line for an Xpress Insight model
+
+  declarations
+    Chess = 1..2 !set composed on number 1 and 2
+    x: array(Chess) of mpvar!array of dimension 2, the dimension of chess of mpvar
+  
+    !decision variables
+    !xs,xl : mpvar
+
+    !rename from objective
+    profit:linctr  !stands for linear constraint, but it is not a constraint, you could also put a name on the constrants
+  end-declarations
+
+
+writeln("Begin running model")
+  
+  !constraints are now
+  3*x(1)+2*x(2) <= 160
+  x(1)+3*x(2) <= 200
+  
+  profit := 5*x(1) +20 *x(2)
+  
+  
+  !define constraints on machine availability and on blockwood availability
+  !3*xs + 2*xl <= 160
+  !xs + 3*xl <= 200
+  
+  !at first we did not include the non-negativity constraints, but the software assumes they are continuous and non-negative
+  
+!assignment of the function to maximize -->  objective function
+!profit := 5*xs + 20*xl
+
+!use keyword to define the goal of the simulation
+maximize(profit)
+
+
+  !here we see the solution
+  writeln("Optimal value", getobjval) !1333.333
+  !writeln("xs=", getsol(xs),"xl=",getsol(xl))
+  writeln("xs=", getsol(x(1)),"xl=",getsol(x(2)))
+
+  !this software solves the problem immediately
+  !we will try to write matrices and arrays to have many more variables and constraints
+  writeln("End running model")
+end-model

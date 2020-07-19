@@ -1,0 +1,52 @@
+!A maximum flow problem!!!
+
+model ModelName
+  options noimplicit
+  uses "mmxprs"
+  ! uses "mminsight" ! uncomment this line for an Xpress Insight model
+
+  declarations
+    NODES = 1..12
+    ARCS: range !given value is not defined at the beginning
+    
+    CAP: array(ARCS) of integer !capacity for each arc
+    PIPE: array(ARCS,1..2) of integer !the definition of the arcs, ordered pair for each arc
+    
+    SOURCE,SINK: integer !!the source node and the sink node
+    
+    x:array(ARCS) of mpvar !our decision variable! how much flow for each arc
+    Totflow:linctr !objective function
+    
+    Objective:linctr
+  end-declarations
+  
+  initialisations from "j1water.dat"
+    CAP PIPE SOURCE SINK !I used the same names that are defined in the .dat file
+      !so the program understands the value of arcs!
+  end-initialisations
+
+
+  writeln("Begin running model")
+  
+    forall(a in ARCS) x(a) <= CAP(a) !capacity constraints
+  
+    forall(n in NODES | n<>SOURCE and n<>SINK) do
+      sum(a in ARCS| PIPE(a,1) = n) x(a) = sum (a in ARCS | PIPE (a,2)=n) x(a) !conservation flow constraints
+            ! exiting flow                      !entering flow
+    end-do 
+    
+    Totflow := sum(a in ARCS| PIPE(a,2)=SINK           ) x(a)
+                              !destination is the sink
+    
+    maximize(Totflow)
+    
+    writeln("MaxFlow =" , getobjval)
+    
+    forall( a in ARCS) writeln("flow in",a," = ",getsol(x(a)))
+    
+  writeln("End running model")
+end-model
+
+
+!result is 52 not 53, someone is not receiving enough
+!Notice that no INTEGRALITY CONSTRAINT was used!!!

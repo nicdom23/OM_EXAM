@@ -1,0 +1,781 @@
+{
+    "ace": {
+        "search": {
+            "@backwards": "false",
+            "@highlightmatches": "true",
+            "@matchcase": "false",
+            "@preservecase": "false",
+            "@regex": "false",
+            "@wholeword": "false",
+            "@wraparound": "true"
+        }
+    },
+    "breakpoints": {
+        "json()": []
+    },
+    "console": {
+        "@expanded": true,
+        "@height": 103,
+        "@maximized": "false",
+        "json()": {
+            "meta": {
+                "accessList": [
+                    "tab1",
+                    "tab17",
+                    "tab2",
+                    "tab4",
+                    "tab7",
+                    "tab9",
+                    "tab12",
+                    "tab5",
+                    "tab6",
+                    "tab11"
+                ]
+            },
+            "name": "pane1",
+            "nodes": [
+                {
+                    "type": "tab",
+                    "name": "tab1",
+                    "path": "",
+                    "className": [
+                        "tab1"
+                    ],
+                    "document": {
+                        "filter": true,
+                        "title": "Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos - Stopped",
+                        "tooltip": "Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos - Stopped",
+                        "output": {
+                            "id": "output160730",
+                            "width": 1134,
+                            "height": 230,
+                            "scrollTop": 59,
+                            "config": {
+                                "runner": "Mosel",
+                                "command": "Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos",
+                                "debug": false,
+                                "toolbar": true,
+                                "name": ""
+                            }
+                        },
+                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "meta": {
+                            "timestamp": 1585583223170
+                        },
+                        "changed": false
+                    },
+                    "editorType": "output",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab2",
+                    "path": "",
+                    "className": [
+                        "tab2"
+                    ],
+                    "document": {
+                        "filter": true,
+                        "title": "Compile - Idle",
+                        "tooltip": "Compile - Idle",
+                        "output": {
+                            "id": "build",
+                            "width": 1134,
+                            "height": 200,
+                            "scrollTop": -1,
+                            "config": {
+                                "name": "Compile",
+                                "toolbar": false,
+                                "command": ""
+                            }
+                        },
+                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "meta": {
+                            "timestamp": 1585583226495
+                        },
+                        "changed": false
+                    },
+                    "editorType": "output",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab4",
+                    "path": "",
+                    "className": [
+                        "tab4"
+                    ],
+                    "document": {
+                        "filter": true,
+                        "title": "Lecture_30032020_primal_dual_problem_test_1_exercise_2_abstract_form.mos - Stopped",
+                        "tooltip": "Lecture_30032020_primal_dual_problem_test_1_exercise_2_abstract_form.mos - Stopped",
+                        "output": {
+                            "id": "output607711",
+                            "width": 1134,
+                            "height": 230,
+                            "scrollTop": 151,
+                            "selection": {
+                                "start": {
+                                    "row": 6,
+                                    "column": 19
+                                },
+                                "end": {
+                                    "row": 21,
+                                    "column": 0
+                                },
+                                "isBackwards": false
+                            },
+                            "config": {
+                                "runner": "Mosel",
+                                "command": "Lecture_30032020_primal_dual_problem_test_1_exercise_2_abstract_form.mos",
+                                "debug": false,
+                                "toolbar": true,
+                                "name": ""
+                            }
+                        },
+                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "meta": {
+                            "timestamp": 1585583430437
+                        },
+                        "changed": false
+                    },
+                    "editorType": "output",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab7",
+                    "path": "",
+                    "className": [
+                        "tab7"
+                    ],
+                    "document": {
+                        "filter": true,
+                        "title": "Lecture_30032020_primal_dual_problem_test_1_exercise_2_abstract_form_different_primal_constraints.mos - Idle",
+                        "tooltip": "Lecture_30032020_primal_dual_problem_test_1_exercise_2_abstract_form_different_primal_constraints.mos - Idle",
+                        "output": {
+                            "id": "output537596",
+                            "width": 1134,
+                            "height": 237,
+                            "scrollTop": 16,
+                            "config": {
+                                "runner": "Mosel",
+                                "command": "Lecture_30032020_primal_dual_problem_test_1_exercise_2_abstract_form_different_primal_constraints.mos",
+                                "debug": false,
+                                "toolbar": true,
+                                "name": ""
+                            }
+                        },
+                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "meta": {
+                            "timestamp": 1585588169192
+                        },
+                        "changed": false
+                    },
+                    "editorType": "output",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab9",
+                    "path": "",
+                    "className": [
+                        "tab9"
+                    ],
+                    "document": {
+                        "filter": true,
+                        "title": "Lecure_08042020_water_conveyance.mos - Stopped",
+                        "tooltip": "Lecure_08042020_water_conveyance.mos - Stopped",
+                        "output": {
+                            "id": "output906540",
+                            "width": 1134,
+                            "height": 237,
+                            "scrollTop": 10,
+                            "config": {
+                                "runner": "Mosel",
+                                "command": "Lecure_08042020_water_conveyance.mos",
+                                "debug": false,
+                                "toolbar": true,
+                                "name": ""
+                            }
+                        },
+                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "meta": {
+                            "timestamp": 1586340015413
+                        },
+                        "changed": false
+                    },
+                    "editorType": "output",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab12",
+                    "path": "",
+                    "className": [
+                        "tab12"
+                    ],
+                    "document": {
+                        "filter": true,
+                        "title": "Lecure_08042020_telecom_france.mos - Stopped",
+                        "tooltip": "Lecure_08042020_telecom_france.mos - Stopped",
+                        "output": {
+                            "id": "output612211",
+                            "width": 1134,
+                            "height": 200,
+                            "scrollTop": -1,
+                            "config": {
+                                "runner": "Mosel",
+                                "command": "Lecure_08042020_telecom_france.mos",
+                                "debug": false,
+                                "toolbar": true,
+                                "name": ""
+                            }
+                        },
+                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "meta": {
+                            "timestamp": 1586343695141
+                        },
+                        "changed": false
+                    },
+                    "editorType": "output",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab5",
+                    "path": "",
+                    "className": [
+                        "tab5"
+                    ],
+                    "document": {
+                        "filter": true,
+                        "title": "Lecture_30032020_primal_dual_problem_test_DOESNT_WORK_uses_production_problem_notation\\(not\\ very\\ clear\\).mos - Stopped",
+                        "tooltip": "Lecture_30032020_primal_dual_problem_test_DOESNT_WORK_uses_production_problem_notation\\(not\\ very\\ clear\\).mos - Stopped",
+                        "output": {
+                            "id": "output265050",
+                            "width": 1134,
+                            "height": 200,
+                            "scrollTop": -1,
+                            "config": {
+                                "runner": "Mosel",
+                                "command": "Lecture_30032020_primal_dual_problem_test_DOESNT_WORK_uses_production_problem_notation\\(not\\ very\\ clear\\).mos",
+                                "debug": false,
+                                "toolbar": true,
+                                "name": ""
+                            }
+                        },
+                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "meta": {
+                            "timestamp": 1587462341300
+                        },
+                        "changed": false
+                    },
+                    "editorType": "output",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab6",
+                    "path": "",
+                    "className": [
+                        "tab6"
+                    ],
+                    "document": {
+                        "filter": true,
+                        "title": "custm - Stopped",
+                        "tooltip": "custm - Stopped",
+                        "output": {
+                            "id": "output61721",
+                            "width": 1134,
+                            "height": 200,
+                            "scrollTop": 434,
+                            "config": {
+                                "runner": "Mosel",
+                                "command": "custm _solution/DUAL_PRIMAL_SOLVER_Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos",
+                                "debug": false,
+                                "toolbar": true,
+                                "name": ""
+                            }
+                        },
+                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "meta": {
+                            "timestamp": 1587465812387
+                        },
+                        "changed": false
+                    },
+                    "editorType": "output",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab11",
+                    "path": "",
+                    "className": [
+                        "tab11"
+                    ],
+                    "document": {
+                        "filter": true,
+                        "title": "custm\\ solution/DUAL_PRIMAL_SOLVER_Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos - Stopped",
+                        "tooltip": "custm\\ solution/DUAL_PRIMAL_SOLVER_Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos - Stopped",
+                        "output": {
+                            "id": "output17072",
+                            "width": 1134,
+                            "height": 200,
+                            "scrollTop": 239,
+                            "config": {
+                                "runner": "Mosel",
+                                "command": "custm\\ solution/DUAL_PRIMAL_SOLVER_Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos",
+                                "debug": false,
+                                "toolbar": true,
+                                "name": ""
+                            }
+                        },
+                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "meta": {
+                            "timestamp": 1587466106100
+                        },
+                        "changed": false
+                    },
+                    "editorType": "output",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab17",
+                    "path": "",
+                    "className": [
+                        "tab17"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1587467121617
+                        },
+                        "filter": true,
+                        "title": "custom_solution/DUAL_PRIMAL_SOLVER_Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos - Idle",
+                        "tooltip": "custom_solution/DUAL_PRIMAL_SOLVER_Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos - Idle",
+                        "output": {
+                            "id": "output768626",
+                            "width": 793,
+                            "height": 71,
+                            "config": {
+                                "runner": "Mosel",
+                                "command": "custom_solution/DUAL_PRIMAL_SOLVER_Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos",
+                                "debug": false,
+                                "toolbar": true
+                            }
+                        }
+                    },
+                    "editorType": "output",
+                    "active": true
+                }
+            ],
+            "skin": "editor_tab",
+            "skinset": "default",
+            "type": "pane"
+        }
+    },
+    "ext": {
+        "counters": {
+            "@ace": 1,
+            "@acestatus": 1,
+            "@base-step-wizard": 2,
+            "@divider": 4,
+            "@document": 19,
+            "@editorswitch": 1,
+            "@fico.vdl.attributes-panel": 1,
+            "@fico.vdl.toolbox-panel": 1,
+            "@form": 4,
+            "@menu": 3,
+            "@menuitem": 8,
+            "@pane": 2,
+            "@session": 10,
+            "@tab": 19,
+            "@undoManager": 19,
+            "@welcome": 1
+        }
+    },
+    "findinfiles": {
+        "@console": "true",
+        "@matchcase": "false",
+        "@regex": "false",
+        "@scope": "selection",
+        "@wholeword": "false"
+    },
+    "local": {
+        "window": {
+            "@fullscreen": false,
+            "@maximized": false,
+            "@minimized": true,
+            "@position": "258:55",
+            "@size": "1041:468"
+        }
+    },
+    "menus": {
+        "@minimized": "false"
+    },
+    "nak": {
+        "@installed": true
+    },
+    "od": {
+        "@last-run-config": "path:blankmodel.mos"
+    },
+    "panecycle": {
+        "json()": [
+            "tab18",
+            "tab17"
+        ]
+    },
+    "panels": {
+        "@active-left": "tree",
+        "@active-right": "none",
+        "commands.panel": {
+            "@enabled": "false",
+            "@name": "commands.panel"
+        },
+        "debugger": {
+            "@enabled": "true",
+            "@name": "debugger"
+        },
+        "fico.ide.language.mosel.modules-panel": {
+            "@enabled": "true",
+            "@name": "fico.ide.language.mosel.modules-panel"
+        },
+        "fico.om.sidebar": {
+            "@enabled": "true",
+            "@name": "fico.om.sidebar"
+        },
+        "fico.vdl.attributes-panel0": {
+            "@enabled": "false",
+            "@name": "fico.vdl.attributes-panel0"
+        },
+        "fico.vdl.toolbox-panel0": {
+            "@enabled": "false",
+            "@name": "fico.vdl.toolbox-panel0"
+        },
+        "navigate": {
+            "@enabled": "false",
+            "@name": "navigate"
+        },
+        "outline": {
+            "@enabled": "true",
+            "@name": "outline"
+        },
+        "tree": {
+            "@enabled": "true",
+            "@name": "tree"
+        }
+    },
+    "projecttree": {
+        "@scrollpos": 288,
+        "expanded": {
+            "json()": [
+                "/",
+                "/Lecture_20042020",
+                "/custom_solution"
+            ]
+        }
+    },
+    "recentfiles": {
+        "json()": []
+    },
+    "search-history": {
+        "search": {
+            "json()": [
+                "j "
+            ]
+        }
+    },
+    "tabs": {
+        "json()": {
+            "focus": "/Lab_22042020/sudoku.mos",
+            "meta": {
+                "accessList": [
+                    "tab18",
+                    "tab15",
+                    "tab14",
+                    "tab10",
+                    "tab0",
+                    "tab3",
+                    "tab8",
+                    "tab13"
+                ]
+            },
+            "name": "pane0",
+            "nodes": [
+                {
+                    "type": "tab",
+                    "name": "tab0",
+                    "path": "/Lecture_18032020_chesssetproblem_best_formulation.mos",
+                    "className": [
+                        "tab0"
+                    ],
+                    "document": {
+                        "filter": true,
+                        "title": "Lecture_18032020_chesssetproblem_best_formulation.mos",
+                        "tooltip": "/Lecture_18032020_chesssetproblem_best_formulation.mos",
+                        "ace": {
+                            "folds": [],
+                            "scrolltop": 420,
+                            "scrollleft": 0,
+                            "selection": {
+                                "start": {
+                                    "row": 15,
+                                    "column": 0
+                                },
+                                "end": {
+                                    "row": 15,
+                                    "column": 0
+                                },
+                                "isBackwards": true
+                            },
+                            "options": {
+                                "guessTabSize": true,
+                                "useWrapMode": false,
+                                "wrapToView": true
+                            },
+                            "firstLineState": {
+                                "row": 24,
+                                "state": "start",
+                                "mode": "plugins/fico.ide.language.mosel/mode/mosel"
+                            }
+                        },
+                        "hash": "b7c10cb4a38d497e5a8e8cd0b823a84910023a52",
+                        "meta": {
+                            "timestamp": 1584529213321
+                        },
+                        "changed": false
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab3",
+                    "path": "/custom_solution/DUAL_PRIMAL_SOLVER_Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos",
+                    "className": [
+                        "tab3"
+                    ],
+                    "document": {
+                        "filter": true,
+                        "title": "DUAL_PRIMAL_SOLVER_Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos",
+                        "tooltip": "/custom_solution/DUAL_PRIMAL_SOLVER_Lecture_30032020_primal_dual_problem_test_1_exercise_1_abstract_form.mos",
+                        "ace": {
+                            "folds": [],
+                            "scrolltop": 1090,
+                            "scrollleft": 0,
+                            "selection": {
+                                "start": {
+                                    "row": 81,
+                                    "column": 78
+                                },
+                                "end": {
+                                    "row": 81,
+                                    "column": 78
+                                },
+                                "isBackwards": false
+                            },
+                            "options": {
+                                "guessTabSize": true,
+                                "useWrapMode": false,
+                                "wrapToView": true
+                            },
+                            "firstLineState": 0
+                        },
+                        "hash": "89f047a1d1216a3576891b8bd07ffd7aa1399ded",
+                        "meta": {
+                            "timestamp": 1587550101110
+                        },
+                        "changed": false
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab8",
+                    "path": "/Lecture_30032020_primal_dual_problem_test_DOESNT_WORK_uses_production_problem_notation(not very clear).mos",
+                    "className": [
+                        "tab8"
+                    ],
+                    "document": {
+                        "filter": true,
+                        "title": "Lecture_30032020_primal_dual_problem_test_DOESNT_WORK_uses_production_problem_notation(not very clear).mos",
+                        "tooltip": "/Lecture_30032020_primal_dual_problem_test_DOESNT_WORK_uses_production_problem_notation(not very clear).mos",
+                        "ace": {
+                            "folds": [],
+                            "scrolltop": 1034,
+                            "scrollleft": 0,
+                            "selection": {
+                                "start": {
+                                    "row": 85,
+                                    "column": 0
+                                },
+                                "end": {
+                                    "row": 85,
+                                    "column": 0
+                                },
+                                "isBackwards": false
+                            },
+                            "options": {
+                                "guessTabSize": true,
+                                "useWrapMode": false,
+                                "wrapToView": true
+                            },
+                            "firstLineState": {
+                                "row": 95,
+                                "mode": "plugins/fico.ide.language.mosel/mode/mosel"
+                            }
+                        },
+                        "hash": "3d3f87ad6352a398f898be2387082032fe018144",
+                        "meta": {
+                            "timestamp": 1585582912649
+                        },
+                        "changed": false
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab10",
+                    "path": "/Lecture_25032020_barge_loading.mos",
+                    "className": [
+                        "tab10"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1585138865621
+                        },
+                        "filter": true,
+                        "title": "Lecture_25032020_barge_loading.mos",
+                        "tooltip": "/Lecture_25032020_barge_loading.mos",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab13",
+                    "path": "/Lecture_18032020_chesssetproblem.mos",
+                    "className": [
+                        "tab13"
+                    ],
+                    "document": {
+                        "filter": true,
+                        "title": "Lecture_18032020_chesssetproblem.mos",
+                        "tooltip": "/Lecture_18032020_chesssetproblem.mos",
+                        "ace": {
+                            "folds": [],
+                            "scrolltop": 280,
+                            "scrollleft": 0,
+                            "selection": {
+                                "start": {
+                                    "row": 11,
+                                    "column": 18
+                                },
+                                "end": {
+                                    "row": 11,
+                                    "column": 18
+                                },
+                                "isBackwards": false
+                            },
+                            "options": {
+                                "guessTabSize": true,
+                                "useWrapMode": false,
+                                "wrapToView": true
+                            },
+                            "firstLineState": {
+                                "row": 14,
+                                "state": "start",
+                                "mode": "plugins/fico.ide.language.mosel/mode/mosel"
+                            }
+                        },
+                        "hash": "e3e5cb9f9654490ad2d9dd4d11abe77b4f038eaf",
+                        "meta": {
+                            "timestamp": 1584528737278
+                        },
+                        "changed": false
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab14",
+                    "path": "/Lecure_08042020_telecom_france.mos",
+                    "className": [
+                        "tab14"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1586343717106
+                        },
+                        "filter": true,
+                        "title": "Lecure_08042020_telecom_france.mos",
+                        "tooltip": "/Lecure_08042020_telecom_france.mos",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab15",
+                    "path": "/Lecture_23042020/model.mos",
+                    "className": [
+                        "tab15"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1587647742352
+                        },
+                        "filter": true,
+                        "title": "model.mos",
+                        "tooltip": "/Lecture_23042020/model.mos",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab18",
+                    "path": "/Lab_22042020/sudoku.mos",
+                    "className": [
+                        "tab18",
+                        "focus"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1587560593478
+                        },
+                        "filter": true,
+                        "title": "sudoku.mos",
+                        "tooltip": "/Lab_22042020/sudoku.mos",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": true
+                }
+            ],
+            "skin": "editor_tab",
+            "skinset": "default",
+            "type": "pane"
+        }
+    },
+    "tree_selection": {
+        "json()": [
+            "/Lecure_08042020_water_conveyance.mos"
+        ]
+    },
+    "welcome": {
+        "@first": true
+    }
+}

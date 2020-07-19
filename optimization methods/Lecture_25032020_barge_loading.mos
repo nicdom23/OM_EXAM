@@ -1,0 +1,121 @@
+model ModelName
+  options noimplicit
+  uses "mmxprs"
+  ! uses "mminsight" ! uncomment this line for an Xpress Insight model
+  
+
+   
+  !!HERE we fix parameters
+  parameters
+  !K = 1500 !capacity in M^3 of barge
+  
+  K = 1535 !new capacity is set
+  
+  end-parameters
+  
+  
+   forward procedure print_sol(num:integer)
+  
+  
+  declarations
+    CL = 1..7 !set of clients
+    
+    !write data from the table (three arrays of size 7 like the clients)
+    
+    size:array(CL) of integer !size of a lot
+    price:array(CL) of integer !price of a lot
+    cost:array(CL) of integer !cost of transportation for one m^3
+    
+    !we can also write(no more comments)
+    !size, price, cost: array(CL) of integer
+    
+    load: array(CL) of mpvar !decision variables: number of lot transported per client
+    
+    
+    profit:linctr !objective function
+  end-declarations
+  
+  !now fill the table arrays
+  
+  size::[10,8,6,9,15,10,12]
+  price::[1000,600,600,800,1200,800,1100]
+  cost::[80,70,85,80,73,70,80]
+  
+  writeln("Begin running model")
+    sum(i in CL) size(i)*load(i) <= K
+    
+    profit := sum(i in CL) (price(i)-cost(i)*size(i))*load(i)
+  
+    maximize(profit)
+    
+     print_sol(1) 
+    
+    !new constraint, clients have limited amount of lots to transport
+    declarations
+      avail: array(CL) of integer !lot availability
+      
+      constAvail: array(CL) of linctr !an array of linear constraints!! Now we can choose to remove them
+    
+    end-declarations
+    
+    avail::[12,31,20,25,50,40,60]
+    
+    !write the constraints
+    
+    forall(i in CL) constAvail(i) := load(i)<=avail(i)  !we define the constraints inside the array
+    
+    maximize(profit)!when we solve this again we consider all the above constraints, including so the ones that define the second problem
+    
+    
+    print_sol(2)
+    
+    !definition of a procedure
+    procedure print_sol(num:integer)
+      writeln("Problem solution- Answer",num,"Profit is:",getobjval)
+      
+      !forall(i in CL)writeln("Client ",i, "=",getsol(load(i)))
+      !more than one line for cycle
+      
+      (!forall(i in CL)do
+        if(getsol(load(i)))>0 then
+          writeln("Client ",i, "=",getsol(load(i)))
+        end-if
+      end-do
+      !)
+      
+      !more compact representation of the solution - inline if
+      
+      forall(i in CL) write(if( getsol(load(i))>0," Client"+ i + ":"+ getsol(load(i)), ""))
+        writeln
+    
+    end-procedure
+    
+    !now we want not to divide the lots we have
+    !just add the integrality constraint
+    
+    forall(i in CL) load(i) is_integer
+    
+     maximize(profit)!when we solve this again we consider all the above constraints, including so the ones that define the second problem
+    
+    
+    print_sol(3)!again we consider all the above constraint
+    
+    ! the second problem is the linear relaxation of the third problem  sol(2)= 17844.44  >  sol(3) = 17805   we have found then an upper bound
+    !notice the small differences in the variables, we cannot deduce the solutions for the third problem from the solutions of the second problem
+    
+    
+    !how can we remove some constraints now? we need to name them
+    
+    !let's leave the integrality constraint and remove the lot availability constraint
+    
+    forall(i in CL) sethidden(constAvail(i),TRUE)
+    
+    ! NOW WE CAN SHOW AND HIDE THE CONSTRAINS WE WANT
+    
+    
+    maximize(profit)
+    
+    print_sol(4)
+    
+  writeln("End running model")!solution is client 1 has load = 150 fowr a profit of 30 000 (it's all for one client)
+end-model

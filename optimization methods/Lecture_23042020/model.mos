@@ -1,0 +1,45 @@
+model ModelName
+  options noimplicit
+  uses "mmxprs"
+
+  declarations
+    NT = 6 !number of nodes
+    TERM = 1..NT
+    DIST: array(TERM,TERM) of integer !distance matrix
+    
+    x: array(TERM,TERM) of mpvar
+    u:array(TERM) of mpvar
+    
+    MST_cost:linctr
+  end-declarations
+  
+  initialisations from "g4cable.dat"
+     DIST
+  end-initialisations
+  
+MST_cost := sum(i,j in TERM) DIST(i,j)*x(i,j)!We count bidirectional edges only once, we'll see why
+
+!easy first constraint, result must have at max n-1 edges
+  sum(i,j in TERM | i<>j) x(i,j) = NT-1
+
+!second constraint to remove small cycles, as in TSP
+
+forall(i,j in TERM| i<>j) u(j)>= u(i) +1 - NT +NT*x(i,j)!eliminates all cycles an subcycles
+  
+forall(i,j in TERM) x(i,j) is_binary
+
+!we may wish to add a constraint that says that from each node there is a direction from one node to the next
+!we want only one edge exiting each node
+forall(i in 2..NT) sum(j in TERM| i<>j) x(i,j) = 1
+! 1 is considered the root, so every node has a directed path to the root
+!without this constraint we have an undirected tree
+
+minimize(MST_cost)
+  writeln("Begin running model")
+    forall(i,j in TERM) write(if(getsol(x(i,j))>0, "i:"+i+"j:"+j+" "+getsol(x(i,j))+"\n",""))
+  writeln("End running model")
+end-model
+
+
+!can recycle this problem to find the minimal cost Hamiltonian tour, obj function remains the same, add one enter and exit
+! Can solve the TSP problem

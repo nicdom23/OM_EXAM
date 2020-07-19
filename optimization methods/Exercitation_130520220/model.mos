@@ -1,0 +1,107 @@
+model ModelName
+  options noimplicit
+  uses "mmxprs"
+
+  declarations
+    !indices
+    i = {'SIN','HKG','KEL','TYO','NGO','UKB','KHH'}!index of loading port "SIN""HKG""KEL""TYO""NGO""UKB""KHH"
+    j = {"RTM","FXT","BRV","LEH"} !index of discharging port "RTM","FXT","BRV","LEH"
+    k = {'DC20','RC20','DC40','RC40'} !index of containter type
+    !f = !index of slots for loaded containers
+    !e =  !index of slots for empty containers
+    
+    !decision variables
+    x_f: array(i,j,k) of mpvar !slot allocating a number full containers type k from i to j
+    x_e: array(i,j,k) of mpvar !slot allocating a number of empty containers typer j from i to j
+    
+    !parameters
+    MC: array(i,j,k) of integer
+    FR: array(i,j,k) of integer !freight revenue, (gain from the transportation) of one container k from i to j
+    VC: array(i,j,k) of integer !omnicomprehensive cost of transportation of one container k from i to j
+    EC: array(i,j,k) of integer !omnicoprehensive repositioning cost of each k-type empty container delivered from i to j
+    I_F: array(i,j,k) of real !imbalance factors that modify container k flow from i to j
+    F: array(i+j,i+j,k) of integer
+    CP: integer !opeartional capacity of the vessel
+    DW: integer !deadweight tonnage of the vessel
+    WF: array(i,j,k) of integer !avg total weight of k container from i to j
+    WE: array(k) of real  !tare weight of each type k container
+    RF: integer !maximum possible number of plugs to attach refrigerated cntainers to
+    FE: integer !maximum number of 40 containers loaded by vessel
+    DL: array(i,j,k) of integer !minimum wanted k-type slot number from i to j
+    DU: array(i,j,k) of integer !maximum k.type slot number of cargo demand at port i to port j
+    CI: array(j,k) of integer  !the repositioning demand of container type k at port j
+    
+    Z:linctr !objective function
+  end-declarations
+  
+  !parameters given by the paper
+  CP := 3350
+  DW := 36510
+  FE:= 1135
+  RF := 200
+  initializations from "slotAllocShipp.dat"
+    FR VC EC F WF DL DU CI WE
+  end-initializations
+  
+  forall(q in i,w in j, e in k) MC(q,w,e):=FR(q,w,e)-VC(q,w,e)
+  !calculate IF
+  forall(q in i,w in j,e in k) do
+   if F(q,w,e)>F(w,q,e) then 
+   I_F(q,w,e) := (F(q,w,e)-F(w,q,e))/F(q,w,e)
+   else I_F(q,w,e):=0
+   end-if
+  end-do
+  
+  Z:= sum(q in i,w in j,e in k) ((MC(q,w,e)-I_F(q,w,e)*EC(q,w,e))*x_f(q,w,e)-EC(q,w,e)*x_e(q,w,e))
+
+  !vessel capacity constraint
+  sum(q in i, w in j, e in {'DC20','RC20'}) (x_f(q,w,e)+x_e(q,w,e)) + sum(q in i, w in j, e in {'DC40','RC40'}) ((x_f(q,w,e)+x_e(q,w,e)))  <= CP
+  sum(q in i, w in j, e in k) (WF(q,w,e)*x_f(q,w,e)+WE(e)*x_e(q,w,e)) <= DW
+  
+  !vesse specification constraints
+  sum(q in i, w in j, e in {'RC20','RC40'}) x_f(q,w,e)<= RF
+  sum(q in i, w in j, e in {'DC40','RC40'}) (x_f(q,w,e)+x_e(q,w,e))  <= FE
+  
+  !cargo demand constraints
+  forall(q in i, w in j, e in k) x_f(q,w,e) >= DL(q,w,e)
+  forall(q in i, w in j, e in k) x_f(q,w,e) <= DU(q,w,e)
+  
+  !repositioning container demand constraints
+  forall(w in j, e in k) sum(q in i) x_e(q,w,e) >= CI(w,e)
+  
+  !variable integer constraints
+  forall(q in i, w in j, e in k) x_f(q,w,e) is_integer
+  forall(q in i, w in j, e in k) x_e(q,w,e) is_integer
+  
+  
+  writeln("Begin running model")
+   maximise(Z)
+   writeln("Solution:", getobjval)
+   writeln("Full containers loads")
+   forall(q in i) do
+      write(q," ")
+   forall(e in k)do
+          write(e,":")
+          forall(w in j)do
+               write(w,"=",getsol(x_f(q,w,e)))
+            write("|")
+            end-do
+            write("||")
+      end-do
+      writeln("\n")
+  end-do
+  writeln("Empty containers loads")
+     forall(q in i) do
+     write(q," ")
+      forall(e in k)do
+          write(e,":")
+          forall(w in j)do
+               write(w,"=",getsol(x_e(q,w,e)))
+            write("|")
+            end-do
+            write("||")
+      end-do
+      writeln("\n")
+  end-do
+  writeln("End running model")
+end-model
